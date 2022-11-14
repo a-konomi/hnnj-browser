@@ -59,5 +59,14 @@
         <li><button on:click|preventDefault={updateBreed}>(´・ω・｀三´・ω・｀)</button></li>
       </ul>
     </div>
+
+    <div>
+      <h3 class="text-lg mt-6 mb-2 text-center border-b">ライセンス &amp; Git Repo</h3>
+
+      <div>
+        <a href="https://github.com/a-konomi/hnnj-browser" target="_blank">Git Repo</a>
+        <a href="https://github.com/a-konomi/hnnj-browser/blob/open-src/LICENSE" target="_blank">ライセンス</a>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,28 +1,37 @@
-# create-svelte
+# HNNJ Community browser
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This app is created for the HNNJ community BBS.
 
-## Creating a project
+## Project structure
 
-If you're seeing this, you've probably already done this step. Congrats!
+This app is created with SvelteKit.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+The only backend is Supabase, which is for storing user-uploaded assets only.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+A web proxy is required for reading/writing content from the community BBS.
+See the supplemental [hnnj-proxy](https://github.com/a-konomi/hnnj-proxy) repository.
+
+There is no management or user login in this app.
+
+As of 2022/11/14, this app is hosted on Vercel.
+[Visit the app](https://hnnj.vercel.app/).
+Any updates to this repo will be reflected on the app in a short time.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+You will need to setup a `.env` file with proper Supabase, or other backend credentials.
+Sample `.env` config:
+
+```text
+PROXY_URL="http://localhost:1234"
+VITE_SUPABASE_URL="..."
+VITE_SUPABASE_ANON_KEY="..."
+```
+
+Once you've created the `.env` file, started the proxy server, and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
 ## Building
