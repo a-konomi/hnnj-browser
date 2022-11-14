@@ -63,10 +63,14 @@
     <div>
       <h3 class="text-lg mt-6 mb-2 text-center border-b">ライセンス &amp; Git Repo</h3>
 
-      <div>
-        <a href="https://github.com/a-konomi/hnnj-browser" target="_blank">Git Repo</a>
-        <a href="https://github.com/a-konomi/hnnj-browser/blob/open-src/LICENSE" target="_blank">ライセンス</a>
-      </div>
+      <ul>
+        <li>
+          <a href="https://github.com/a-konomi/hnnj-browser/blob/open-src/LICENSE" target="_blank">ライセンス</a>
+        </li>
+        <li>
+          <a href="https://github.com/a-konomi/hnnj-browser" target="_blank">Git Repo</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
