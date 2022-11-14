@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cmt-link, .cmt-image {
+    @apply underline;
+}
+
+.tindex-bg {
+    position: relative;
+}
+
+.tindex-bg:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("https://d2fda0vykczvmk.cloudfront.net/images/placers/wcovers/x360-09.jpg");
+}
